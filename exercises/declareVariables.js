@@ -10,7 +10,7 @@ if (age > 18) {
     let adult = true;
     console.log(adult);
 }
-//Using either let or const will not break this code, however extending the control flow statement could generate potential issues. In order to be able to reuse "adult", and to assign it the boolean `false`, we need to declare "adult" with `let`. While we *could* use `const` to declare "age", it does not make much sense since we are *checking* the age value- this variable is likely to change as well. Better to use `let`. It's pretty situational.
+//Using either `let` or `const` will not break this code, however extending the control flow statement could generate potential issues. In order to be able to reuse "adult", and to assign it the boolean `false`, we need to declare "adult" with `let`. While we *could* use `const` to declare "age", it does not make much sense since we are *checking* the age value- this variable is likely to change as well. Better to use `let`. It's pretty situational.
 
 const loopArray = [];
 for (let i = 0; i < 5; i++) {
