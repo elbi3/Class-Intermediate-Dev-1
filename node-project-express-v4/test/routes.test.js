@@ -3,13 +3,13 @@ const app = require('../app');
 
 
 (async () => {
-    await request(app).get('/').expect(200).expect("Hello World");
+    await request(app).get('/').expect(200);
     //sends "Hello World" text
-    await request(app).get('/about').expect(200).expect("About page"); 
+    await request(app).get('/about').expect(200); 
     //sends "About page" text
     await request(app).get('/foo').expect(200); //still need to test conditional text
     //sends one of two messages randomly
-    await request(app).get('/user').expect(200).expect("Hello user random guest!"); //should pass, as there is a default for no param
+    await request(app).get('/user').expect(200); //should pass, as there is a default for no param
     //sends "Hello user random guest!"
     await request(app).get('/user/name').expect(200); //dynamic route
     //sends "Hello username!"

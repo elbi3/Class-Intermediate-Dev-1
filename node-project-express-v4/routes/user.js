@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/:name?', function(req, res, next) {
     const userName = req.params.name ? req.params.name : " random guest";
     console.log("req.params.name: ", req.params.name);
-    res.send(`Hello user${userName}!`);
+    res.send(`Hello user ${userName}!`);
 });
 
 module.exports = router;

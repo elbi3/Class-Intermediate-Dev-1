@@ -1,6 +1,22 @@
 /notes/*
 notes/*
-/node-project-express-v4/node_modules/*
-node-project-express-v4/node_modules/*
-**/node_modules/*
-*/node_modules/*
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+
+# OS junk
+.DS_Store
+
+# Build output
+dist/
+build/
+
+# to check, use `git status --ignored`

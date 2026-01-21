@@ -1,6 +1,7 @@
 # Build a Basic Express NodeJS Server
 
-This project is built with express-generator.
+This project is built with express-generator. While express-generator is still using Express v4, I am excited to see what they come up with to match Express v5 and will revisit the tool once they upgrade it.
+
 ## To Run
 
 To run this on your machine, clone this repo and then navigate to the "/node-project-express-v4" directory inside it (it is nested inside the parent project "Intermediate-dev-1-class"). In terminal, do the basic install (`npm i`). Then, `npm start` will spin up the server, and the site should be viewable in the browser at `localhost:8000`.
