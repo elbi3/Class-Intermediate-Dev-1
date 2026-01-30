@@ -20,3 +20,5 @@ dist/
 build/
 
 # to check, use `git status --ignored`
+/leetcode/*
+leetcode/*

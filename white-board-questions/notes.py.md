@@ -6,3 +6,8 @@
 | “fast lookup”                   | `dict` or `set`        |
 | “sorted output”                 | `sorted()`             |
 | “pairs”, “two numbers”          | `dict` or two pointers |
+
+
+## slicing strings
+[start:stop:step]
+[::-1]
