@@ -1,7 +1,7 @@
 import unittest
 from default_file import some_function
 
-# to run, enter `python -m unittest`
+# to run, enter `python -m unittest test_module_name`   
 class TestCalculations(unittest.TestCase):
     def test_1(self):
         # code

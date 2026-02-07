@@ -1,12 +1,14 @@
 import unittest
 from default_file import some_function
 
+# 1. name your class for what you are testing
 class TestSomeFunction(unittest.TestCase):
+    # 2. methods must have different names
     def test_something(self):
         self.assertEqual(some_function(), 2)
-# test method names must start with test_
-# self = the current test case object
-# assertEqual is a method *on* that object
+# 3. test method names must start with test_
+# 4. self = the current test case object
+# 5. assertEqual is a method *on* that object
     print("pass!")
 
     def test_something_else(self):
