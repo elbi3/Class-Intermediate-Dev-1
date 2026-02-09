@@ -22,3 +22,8 @@ build/
 # to check, use `git status --ignored`
 /leetcode/*
 leetcode/*
+
+__pycache__/   
+
+python-topics/*
+python-topics

@@ -4,33 +4,22 @@
 # output can be in any order
 nums = [2,7,11,15]
 target = 9
+# ---------->this function is about lookup--->"Check if something exists"
+# ---------->a dictionary gives us 0(1) for lookup (constant time)
+#“Have I seen the complement already, and where?”
 def twoSum(nums, target):
-    mydict = {}
-    nums.sort()
+    d = {}
+    for index, val in enumerate(nums): #------>O(n)
+        other = target - val
         
-    for x in nums:
-        while True:
-            
+        #lookup: look for "other" needed num ---->O(1) lookups
+        if other in d:
+            print("index: ", index, "other: ", d[other])
+            return [index, d[other]]
         
-    for num in nums:
-        mydict[num] = 0
+        #otherwise save it in dictionary:
+        d[val] = index
 
-    for num in mydict:
-        if num + num[i+1] == target
-            return [num, num[i+1]
-        else mydict[num] = 1
-    return mydict
+        
+    print("d: ", d)
 
-mydict = twoSum(nums, target)
-
-print(mydict)
-
-
-# “As I iterate, I want to remember information in a way that makes future checks cheap.”
-# this is the hash map pattern
-
-# tests = [
-#     { Input: nums = [2,7,11,15], target = 9, Output: [0,1] },
-#     { Input: nums = [3,2,4], target = 6, Output: [1,2] },
-#     { Input: nums = [3,3], target = 6, Output: [0,1] }
-# ]
