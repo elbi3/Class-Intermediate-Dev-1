@@ -11,7 +11,6 @@ import express from 'express';
 import logger from 'morgan';
 
 
-import indexRouter from './routes/index.js';
 import factsRouter from './routes/facts.js';
 
 const app = express();
@@ -28,7 +27,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 app.use('/facts', factsRouter);
 
 // catch 404 and forward to error handler
@@ -44,7 +42,13 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.json({
+    'error': err.name,
+    "message": err.message,
+    "status": err.status,
+    "path": path.fileURLToPath,
+    "method": err.method
+  });
 });
 
 export default app;
