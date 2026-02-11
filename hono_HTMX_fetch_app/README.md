@@ -1,0 +1,1 @@
+“Server owns the UI. HTMX just swaps fragments.”
