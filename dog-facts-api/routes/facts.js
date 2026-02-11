@@ -1,6 +1,6 @@
 import express from 'express';
 import { z } from "zod";
-import dogFacts from '../data/dog_facts-1.js';
+import dogFacts from '../data/dogFacts.js';
 
 const router = express.Router();
 
@@ -10,6 +10,7 @@ const factsQuerySchema = z.object({
     .optional()
     .transform(val => {
       const n = Number(val);
+      //schema silently converts bad values into undefined:
       return Number.isInteger(n) && n > 0 ? n : undefined;
     })
 });
@@ -26,7 +27,8 @@ router.get('/', function(req, res) {
 
   const { number } = result.data;
 
-  if ( number === undefined ) {
+  if ( number === undefined ) { 
+    //for incorrect query params, return all facts (very forgiving)
     return res.json(dogFacts);
   };
   

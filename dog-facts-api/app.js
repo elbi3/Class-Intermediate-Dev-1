@@ -1,7 +1,3 @@
-//implement `GET/facts` endpoint (returns list of dog facts)
-//-->include parameter `number` to specify number of dog facts
-//endpoint reads number query. If no number is provided, return ALL facts
-
 //to get cross-platform absolute valid paths strings for view engine setup:
 import { fileURLToPath } from "node:url";
 import path from 'node:path';
@@ -15,13 +11,13 @@ import factsRouter from './routes/facts.js';
 
 const app = express();
 
-// view engine setup
+// view engine setup (not needed for this project)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'pug');
 
-// app.use(logger('dev'));
+// app.use(logger('dev')); --> used custom logger params:
 app.use(logger(':method :url :status :res[content-length] - :response-time ms'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
