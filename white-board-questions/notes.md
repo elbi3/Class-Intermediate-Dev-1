@@ -48,6 +48,7 @@ recursion *is* a stack, just not one you manage
 “Each recursive call explores one path fully, reports a result, and disappears.”
 
 base case: immediate return, no recursion, dead end found
+base case: stopping condigion, no further work found, we perform no further operation
 ```js
 maxDepth(A)
  ├─ maxDepth(B)
@@ -72,6 +73,12 @@ Stop thinking:
 Start thinking:
 “What answer does this node owe its parent?”
 That’s recursion.
+
+keywords: DEPTH search
+
+Because in recursion, you always recurse past the leaves.
+recursion always walks past the leaves into None. "There is no subtree here"
+
 
 ## OOP
 [from mentor](https://bytebytego.com/courses/object-oriented-design-interview/design-a-parking-lot)

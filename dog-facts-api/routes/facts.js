@@ -1,7 +1,8 @@
 import express from 'express';
-const router = express.Router();
-import dogFacts from '../data/dog_facts-1.js';
 import { z } from "zod";
+import dogFacts from '../data/dog_facts-1.js';
+
+const router = express.Router();
 
 const factsQuerySchema = z.object({
   number: z
@@ -14,18 +15,22 @@ const factsQuerySchema = z.object({
 });
 
 /* GET users listing. */
-router.get('/:number', function(req, res, next) {
+router.get('/', function(req, res) {
   const q = req.query;
   const result = factsQuerySchema.safeParse(q);
   console.log("result: ", result);
-  const { success, data } = result;
-  if (!success) {
+
+  if (!result.success) {
     return res.status(400).json({ error: "Invalid query parameters"});
   };
-  if (typeof data === "object") {
+
+  const { number } = result.data;
+
+  if ( number === undefined ) {
     return res.json(dogFacts);
-  }
-  return res.json(dogFacts.slice(0, data.value));
+  };
+  
+  return res.json(dogFacts.slice(0, number));
 });
 
 export default router;
