@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog Breeds</title>
+</head>
+<body>
+
+  <h1>Dog Breeds</h1>
+
+  <ul>
+    <% breeds.forEach(breed => { %>
+      <li>
+        <a href="/breeds/<%= breed.id %>">
+          <%= breed.attributes.name %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>

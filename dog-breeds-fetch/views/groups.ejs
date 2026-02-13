@@ -1,0 +1,12 @@
+<h2>Dog Groups</h2>
+
+<ul>
+  <% groups.forEach(group => { %>
+    <li>
+      <strong><%= group.attributes.name %></strong>
+      <p><%= group.attributes.description || "No description available." %></p>
+    </li>
+  <% }) %>
+</ul>
+
+<a href="/breeds">Back to Breeds</a>

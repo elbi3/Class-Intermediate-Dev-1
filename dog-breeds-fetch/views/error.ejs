@@ -1,0 +1,9 @@
+<h1>Error <%= status %></h1>
+
+<p><%= message %></p>
+
+<% if (error && error.stack) { %>
+  <pre><%= error.stack %></pre>
+<% } %>
+
+<a href="/breeds">Back to Breeds</a>

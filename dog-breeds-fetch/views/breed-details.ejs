@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= breed.name %></title>
+</head>
+<body>
+
+  <a href="/breeds">← Back to Breeds</a>
+
+  <h1><%= breed.name %></h1>
+
+  <p><strong>Description:</strong></p>
+  <p><%= breed.description || "No description available." %></p>
+
+  <p>
+    <strong>Life Span:</strong>
+    <%= breed.life?.min ?? "?" %> -
+    <%= breed.life?.max ?? "?" %> years
+  </p>
+
+</body>
+</html>
