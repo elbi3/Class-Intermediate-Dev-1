@@ -29,7 +29,7 @@ export default function Blog() {
   return (
     <main>
       <h1>Blog</h1>
-      <ul>
+      {/* <ul>
         {posts.map((post: any) => (
           <li key={post.slug}>
             <Link to={`/blog/${post.slug}`}>
@@ -37,7 +37,7 @@ export default function Blog() {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </main>
   );
 }
