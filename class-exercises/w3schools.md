@@ -1,0 +1,5 @@
+
+```shell
+python --version
+end()
+```
