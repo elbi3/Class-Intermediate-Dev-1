@@ -1,5 +1,4 @@
-/notes/*
-notes/*
+
 # Dependencies
 node_modules/
 
@@ -24,6 +23,3 @@ build/
 leetcode/*
 
 __pycache__/   
-
-python-topics/*
-python-topics

@@ -1,0 +1,5 @@
+Sorting Approach
+
+For this problem, we squared each element in the input array and then used Python’s built-in sorting method (sorted() / .sort()) to order the results in non-decreasing order. Python’s built-in sort is implemented using Timsort, a hybrid sorting algorithm derived from merge sort and insertion sort. Timsort is highly optimized, stable, and performs efficiently across a wide range of real-world data patterns.
+
+We chose Python’s built-in sort because it provides O(n log n) time complexity in the average and worst cases, with O(n) space complexity. It is well-tested, production-grade, and more reliable than implementing a custom sorting algorithm unless explicitly required. In practice, leveraging built-in, optimized algorithms is preferred over reimplementing standard functionality, as it improves readability, maintainability, and performance.
