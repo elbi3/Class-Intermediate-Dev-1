@@ -1,0 +1,11 @@
+
+h1 {
+    text-align: center;
+}
+
+.home-container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
