@@ -1,5 +1,0 @@
-
-```shell
-python --version
-end()
-```
