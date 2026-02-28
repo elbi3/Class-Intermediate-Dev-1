@@ -1,0 +1,13 @@
+.toggle {
+    padding: .5rem;
+}
+.enabled {
+    border: 2px solid rgb(26, 28, 147);
+    background-color: lavender;
+    font-weight: 700;
+}
+.disabled {
+    background-color: lightgray;
+    border: 2px solid darkslateblue;
+    font-style: italic;
+}
