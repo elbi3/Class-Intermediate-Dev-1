@@ -56,3 +56,14 @@ http://localhost:5173
 
 
 This setup allows each AlertButton to maintain its own click count, while the App component manages modal visibility and content, demonstrating proper props drilling and state management in React.
+
+## Screenshots
+
+<img width="633" height="377" alt="Screenshot 2026-03-05 at 2 30 34 PM" src="https://github.com/user-attachments/assets/f28fc2d2-42e9-4555-b848-85bb9b574c34" />
+
+<img width="660" height="715" alt="Screenshot 2026-03-05 at 2 30 40 PM" src="https://github.com/user-attachments/assets/b5e024e5-eb1a-44e1-9768-ec010d201e30" />
+
+<img width="619" height="660" alt="Screenshot 2026-03-05 at 2 30 50 PM" src="https://github.com/user-attachments/assets/89539b37-e47f-43a6-ad2d-0de6442830f0" />
+
+
+
