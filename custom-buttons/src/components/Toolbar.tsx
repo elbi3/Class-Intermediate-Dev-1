@@ -1,6 +1,6 @@
 import AlertButton from "./AlertButton";
 
-type ToolbarProps = {
+interface ToolbarProps {
     onTrigger: (message: string, icon?: React.ReactNode) => void;
 };
 

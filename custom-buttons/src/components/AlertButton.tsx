@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-
-type AlertButtonProps = {
+interface AlertButtonProps {
     message: string;
     children: React.ReactNode;
     icon?: React.ReactNode;

@@ -1,4 +1,4 @@
- type ModalProps = {
+interface ModalProps {
     icon?: React.ReactNode;
     message: string;
     onClose: () => void;
