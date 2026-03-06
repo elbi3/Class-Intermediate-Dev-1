@@ -31,6 +31,7 @@ export default function AlertButton({
 const styles = {
     btn: {
         margin: ".25rem",
+        color: "thistle"
     },
     counter: {
         color: "magenta"

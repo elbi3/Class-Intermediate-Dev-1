@@ -9,7 +9,7 @@ export default function Modal({ message, icon, onClose }: ModalProps) {
     <div style={styles.overlay}>
       <div style={styles.modal}>
         <p>{message} {icon}</p>
-        <button onClick={onClose}>Close</button>
+        <button style={styles.btn} onClick={onClose}>Close</button>
       </div>
     </div>
   );
@@ -33,5 +33,8 @@ const styles = {
       padding: "20px",
       borderRadius: "8px",
       minWidth: "200px"
+    },
+    btn: {
+      color: "thistle"
     }
   };
