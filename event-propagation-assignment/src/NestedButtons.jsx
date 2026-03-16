@@ -1,4 +1,3 @@
-// it's more "react-y" to show the event in the UI (as opposed to doing webpate alerts)
 import { useState } from "react";
 
 function NestedButtons() {
