@@ -64,6 +64,7 @@ public/
 - HTMX handles dynamic updates without a frontend framework.
 
 ## How to Run Locally
+0. Check that you have Node.js installed with `node -v`
 1. Clone the repository
 ```shell
 git clone <your-repo-url>
